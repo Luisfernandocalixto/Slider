@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estiloCarga.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/galeria.webp" type="image/x-icon">
+    <title>Galería de imagenes</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav id="navbarbg">
+        <div class="nav-wrapper" id="nav-wrapper">
+            <a href="" class="brand-logo"><span class="material-icons">
+                    home
+                </span></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">
+                        <span class="material-icons">
+                            stars
+                        </span>
+                    </a></li>
+                <li><a href=""><span class="material-icons">
+                            search
+                        </span></a></li>
+                <li><a href=""><span class="material-icons">
+                            bookmark
+                        </span></a></li>
+                <li><a href=""><span class="material-icons">
+                            account_circle
+                        </span> </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo" id="sidenav">
+        <li><a href="">Mi cuenta</a></li>
+        <li><a href="">Buscar</a></li>
+        <li><a href="">Guardados</a></li>
+        <li><a href="">Perfil</a></li>
+    </ul>
+
+    <!-- carousel -->
+
+    <div class="carousel carousel-slider">
+        <div class="carousel-item" id="slide1" href="#one!">
+            <img class="img" id="img"
+                src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+        <div class="carousel-item" id="slide2" href="#two!">
+            <img class="img" id="img2"
+                src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+        <div class="carousel-item" id="slide3" href="#three!">
+            <img class="img" id="img3"
+                src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+        <div class="carousel-item" id="slide4" href="#four!">
+            <img class="img" id="img4"
+                src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+    </div>
+
+
+
+    <!-- Inicio de carga de imagenes -->
+    <br>
+    <div class="center">
+        <h5>Selecciona una imagen y modifica tu  galería 🌟 </h5>
+    </div>
+    <br>
+    <div class="contener-cargas">
+
+        <div action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Imagen 1</span>
+                    <input type="file" id="fileInp" onchange="getFile(event)" accept="image/png, image/jpeg, image/jpg">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+            <div class="">
+                <div class="bar">
+                    <div class="progress5"></div>
+                </div>
+
+                <div class="uploadPercentage" style="color: #000;">0%</div>
+
+                <button class="btn" onclick="cargandoImg()" id="marque" disabled>Cargar Imagen</button>
+            </div>
+        </div>
+        <br>
+        <div action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Imagen 2</span>
+                    <input type="file" id="fileInp2" onchange="getFile2(event)"
+                        accept="image/png, image/jpeg, image/jpg">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+            <div>
+
+                <div class="bar">
+                    <div class="progress2"></div>
+                </div>
+
+                <div class="uploadPercentage2" style="color: #000;">0%</div>
+
+                <button class="btn" onclick="cargandoImg2()" id="marque2" disabled>Cargar Imagen</button>
+            </div>
+        </div>
+        <br>
+        <div action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Imagen 3</span>
+                    <input type="file" id="fileInp3" onchange="getFile3(event)"
+                        accept="image/png, image/jpeg, image/jpg">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+            <div>
+
+                <div class="bar">
+                    <div class="progress3"></div>
+                </div>
+
+                <div class="uploadPercentage3" style="color: #000;">0%</div>
+
+                <button class="btn" onclick="cargandoImg3()" id="marque3" disabled>Cargar Imagen</button>
+            </div>
+        </div>
+        <br>
+        <div action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Imagen 4</span>
+                    <input type="file" id="fileInp4" onchange="getFile4(event)"
+                        accept="image/png, image/jpeg, image/jpg">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+            <div>
+
+                <div class="bar">
+                    <div class="progress4"></div>
+                </div>
+
+                <div class="uploadPercentage4" style="color: #000;">0%</div>
+
+                <button class="btn" onclick="cargandoImg4()" id="marque4" disabled>Cargar Imagen</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer center space">
+        <h5>Sube una nueva imagen a tu galería 🌟</h5>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/components.js"></script>
+</body>
+
+</html>

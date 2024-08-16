@@ -1,0 +1,96 @@
+#navbarbg {
+  background: #23252b !important;
+  color: #fff !important;
+
+  .brand-logo {
+    margin-left: 15px;
+  }
+
+}
+
+.carousel img {
+  width: 100% !important;
+  /* height: auto; */
+  object-fit: cover !important;
+  object-position: center !important;
+  aspect-ratio: 1200/420 !important;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+   * ----------------------------------------
+   * animation fade-in
+   * ----------------------------------------
+   */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.error {
+  background: #ee6e73 !important;
+  color: aliceblue !important;
+}
+
+.space{
+  margin-top: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.contener-cargas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+
+  & button {
+    width: 100%;
+  }
+
+}
+
+.contenido-imagen {
+  max-width: 300px;
+  display: grid;
+  justify-items: center;
+}
+
+.bar {
+  height: 10px;
+  width: 100%;
+  background: #80808073;
+}
+
+.progress2,
+.progress3,
+.progress4,
+.progress5 {
+  background: -webkit-linear-gradient(12deg, red, blue);
+  height: 100%;
+  width: 0%;
+
+}
