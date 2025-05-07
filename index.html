@@ -8,11 +8,12 @@
     <meta property="og:title" content="Galería de imágenes">
     <meta property="og:url" content="https://galeria-de-images.netlify.app">
     <meta property="og:image" content="./img/galeria.webp">
-    <meta property="og:description" content="Selecciona tu imagen y construye tu galería">  
+    <meta property="og:description" content="Selecciona tu imagen y construye tu galería">
     <link rel="stylesheet" href="./css/estiloCarga.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="./img/galeria.webp" type="image/x-icon">
+    <script src="/js/direction.js"></script>
     <title>Galería de imagenes</title>
 </head>
 
@@ -23,7 +24,7 @@
             <a href="" class="brand-logo"><span class="material-icons">
                     home
                 </span></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">
                         <span class="material-icons">
@@ -43,7 +44,7 @@
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo" id="sidenav">
+    <ul class="sidenav"  id="sidenav">
         <li><a href="">Mi cuenta</a></li>
         <li><a href="">Buscar</a></li>
         <li><a href="">Guardados</a></li>
@@ -53,20 +54,20 @@
     <!-- carousel -->
 
     <div class="carousel carousel-slider">
-        <div class="carousel-item" id="slide1" href="#one!">
-            <img class="img" id="img"
+        <div class="carousel-item" id="slide1">
+            <img alt="biblioteca" class="img" id="img"
                 src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
         </div>
-        <div class="carousel-item" id="slide2" href="#two!">
-            <img class="img" id="img2"
+        <div class="carousel-item" id="slide2">
+            <img alt="biblioteca" class="img" id="img2"
                 src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
         </div>
-        <div class="carousel-item" id="slide3" href="#three!">
-            <img class="img" id="img3"
+        <div class="carousel-item" id="slide3">
+            <img alt="biblioteca" class="img" id="img3"
                 src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
         </div>
-        <div class="carousel-item" id="slide4" href="#four!">
-            <img class="img" id="img4"
+        <div class="carousel-item" id="slide4">
+            <img alt="biblioteca" class="img" id="img4"
                 src="https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&w=600">
         </div>
     </div>
@@ -76,12 +77,12 @@
     <!-- Inicio de carga de imagenes -->
     <br>
     <div class="center">
-        <h5>Selecciona una imagen y modifica tu  galería 🌟 </h5>
+        <h5>Selecciona una imagen y modifica tu galería 🌟 </h5>
     </div>
     <br>
     <div class="contener-cargas">
 
-        <div action="#">
+        <div>
             <div class="file-field input-field">
                 <div class="btn">
                     <span>Imagen 1</span>
@@ -102,7 +103,7 @@
             </div>
         </div>
         <br>
-        <div action="#">
+        <div>
             <div class="file-field input-field">
                 <div class="btn">
                     <span>Imagen 2</span>
@@ -125,7 +126,7 @@
             </div>
         </div>
         <br>
-        <div action="#">
+        <div>
             <div class="file-field input-field">
                 <div class="btn">
                     <span>Imagen 3</span>
@@ -148,7 +149,7 @@
             </div>
         </div>
         <br>
-        <div action="#">
+        <div>
             <div class="file-field input-field">
                 <div class="btn">
                     <span>Imagen 4</span>

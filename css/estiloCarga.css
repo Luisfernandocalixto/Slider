@@ -10,7 +10,6 @@
 
 .carousel img {
   width: 100% !important;
-  /* height: auto; */
   object-fit: cover !important;
   object-position: center !important;
   aspect-ratio: 1200/420 !important;
